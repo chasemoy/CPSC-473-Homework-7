@@ -8,15 +8,15 @@ body {
 
 .chat-wrapper {
   display: flex;
-  height: 100%;
   flex-direction: column;
+  height: 100%;
 }
 .chat-messages {
   flex: 3;
   overflow-y: auto;
 }
 
-ul, ul.panel-body {
+ul, .panel-body {
   margin: 0;
   padding: 0;
 }
@@ -26,28 +26,28 @@ ul, ul.panel-body {
 }
 
 .message-row {
+  display: flex;
   list-style-type: none;
   padding: 4px 12px;
-  display: flex;
 }
 
 .message-row img {
+  border-radius: 15px;
   padding-right: 1em;
   /* flex: auto; */
-  border-radius: 15px;
 }
 
-.message-row p {
+/* .message-row p {
   /* flex: auto; */
-}
+/* } */
 
 .me {
   /* justify-content: flex-end; */
   flex-direction: row-reverse;      }
 
 .me img{
-  padding-right: 0;
   padding-left: 1em;
+  padding-right: 0;
 }
 
 .me p {
